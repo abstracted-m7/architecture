@@ -1,0 +1,20 @@
+Write an 8085 assm code that takes two 8-bit numbers as input each stored in a separed register and output their product.
+
+
+CODE : 
+MVI A, 00H
+MVI B, 25H
+MVI C, 05H
+MVI D, 08H
+LOOP: RLC
+JNC NOADD
+ADD B
+NOADD: DAD H
+DCR D
+JNZ LOOP
+;STA 3000H
+HLT
+
+OUTPUT : 3F
+
+SIMULATOR : https://www.sim8085.com/

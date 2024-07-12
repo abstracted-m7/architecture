@@ -1,0 +1,12 @@
+Write an 8085 ass code that takes two 8-bit numbers as input stores in seperate registers and outputs their difference.
+
+CODE : 
+MVI A, 35H
+MVI B, 15H
+SUB B
+STA 3000H
+HLT 
+
+OUTPUT: 20
+
+SIMULATOR : https://www.sim8085.com/

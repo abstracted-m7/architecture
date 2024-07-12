@@ -1,0 +1,14 @@
+Write an 8085 asm code that takes two 8bit numbers as input, each stored in a separate register and output their sum.
+
+
+CODE :
+MVI A, 25H
+MVI B, 1AH
+ADD B
+STA 3000H
+HLT
+
+OUTPUT:
+3F
+
+SIMULATOR : https://www.sim8085.com/

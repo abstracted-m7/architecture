@@ -1,0 +1,28 @@
+CODE:
+
+START: LXI H,0040H
+		MVI D, 00H
+        MOV C,M
+        DCR C
+        INX H
+FLAG: MOV A,M
+		INX H
+        CMP M
+JC NEXT
+JZ NEXT
+MOV B,M
+MOV M,A
+DCX H
+MOV M,B
+INX H
+MVI D, 01H
+NEXT: DCR C
+		JNZ FLAG
+        MOV A,D
+        CPI 01H
+JZ START
+HLT
+
+OUTPUT: 76
+
+SIMULATOR: https://www.sim8085.com/

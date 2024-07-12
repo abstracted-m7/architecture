@@ -1,0 +1,14 @@
+Write an 8085 ass code that takes two 8-bit numbers as input from specific memory location , adds them together and stores the sum in another memory location.
+
+CODE :
+LXI H, 2000H
+MOV A,M
+LXI D,2001H
+MOV B,M
+ADD B
+LXI H, 3000H
+HLT
+
+OUTPUT: 76
+
+SIMULATOR : https://web8085.appspot.com/

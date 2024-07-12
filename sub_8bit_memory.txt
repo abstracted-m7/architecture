@@ -1,0 +1,14 @@
+Write an 8085 asm code that takes two 8-bit numbers stored in memory as input and output their difference.
+
+
+CODE :
+LXI H, 2000H
+MOV A,M
+LXI D,2001H
+SUB M
+STA 3000H
+HLT
+
+OUTPUT : 76
+
+SIMULATOR : https://web8085.appspot.com/
